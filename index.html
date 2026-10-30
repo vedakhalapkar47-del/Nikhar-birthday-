@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Nikhar 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="hearts"></div>
+
+  <main class="container">
+
+    <header>
+      <div class="decoration">🌷 ✨ 🦋</div>
+      <h1>For My Nikhar 💗</h1>
+      <p>A little puzzle, a lifetime of memories.</p>
+    </header>
+
+    <!-- WELCOME SCREEN -->
+    <section class="card" id="welcome">
+      <div class="big-icon">🎀</div>
+      <h2>Happiest Birthday, Sisso!</h2>
+      <p>
+        I've made something special for you.
+        Solve this little puzzle to unlock your surprise! 🥹
+      </p>
+      <button id="startBtn">Let's Play! 🧩</button>
+    </section>
+
+    <!-- PUZZLE SCREEN -->
+    <section class="card hidden" id="game">
+
+      <h2>Put our memories together 💕</h2>
+
+      <p class="instructions">
+        Tap two pieces to swap them, or drag one piece onto another.
+      </p>
+
+      <div class="stats">
+        <span>⏱️ <b id="timer">00:00</b></span>
+        <span>🔄 <b id="moves">0</b> moves</span>
+      </div>
+
+      <div class="preview">
+        <p>Our original memory 💗</p>
+        <img id="previewImage" src="images/sister1.jpg" alt="Sister photo">
+      </div>
+
+      <div id="puzzle"></div>
+
+      <p id="feedback">Every piece brings us closer! 🫶</p>
+
+      <button id="shuffleBtn">🔀 Shuffle Again</button>
+
+      <p class="music-note">
+        🎵 Your birthday song is waiting for the big reveal!
+      </p>
+
+    </section>
+
+    <!-- CELEBRATION SCREEN -->
+    <section class="card hidden" id="celebration">
+
+      <div class="celebrate-icon">🎉🎂💗</div>
+
+      <h2>YOU DID IT, NIKHAR!</h2>
+
+      <img id="finalImage" src="images/sister1.jpg" alt="Our memory">
+
+      <h2 class="pink-title">
+        You solved the puzzle, but you'll always be my favourite piece! 💗
+      </h2>
+
+      <div class="birthday-letter">
+
+        <p>Happiest Birthday, my dear Nikhar! 🥹❤️</p>
+
+        <p>
+          You're my Preeti, my Aman, my oxygen,
+          my safe place and my forever sister.
+        </p>
+
+        <p>
+          Thank you for being there through my visa
+          struggles, every problem and every difficult moment.
+          I'll never forget you coming to the airport
+          to send me off. 🫂
+        </p>
+
+        <p>
+          No matter how far apart we are,
+          you'll always be my home.
+        </p>
+
+        <h3>Har janam tu hi chahiye, behena! ❤️</h3>
+
+        <p>Ray mama Ray ko Nikhat chahiye! 😂</p>
+
+        <h2>LOVE YOU FOREVER! 😘</h2>
+
+      </div>
+
+      <div class="music-player">
+        <h3>🎶 A little song for you</h3>
+        <button id="musicBtn">▶ Play Birthday Song</button>
+      </div>
+
+      <button id="againBtn">Play Again 💕</button>
+
+    </section>
+
+    <footer>
+      Made with endless love for my Sisso ♡
+    </footer>
+
+  </main>
+
+  <audio id="music" src="music/birthday.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

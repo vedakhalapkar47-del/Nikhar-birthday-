@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #ffe0ed, #eadfff, #fff0df);
+  color: #75445f;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: min(100% - 28px, 480px);
+  margin: auto;
+  padding: 25px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.decoration {
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+  color: #d45b99;
+  margin: 12px 0;
+}
+
+header p {
+  color: #966d91;
+}
+
+.card {
+  background: rgba(255,255,255,.91);
+  padding: 23px 16px;
+  margin: 20px 0;
+  border-radius: 28px;
+  box-shadow: 0 12px 35px #b87da333;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h2 {
+  color: #ce6199;
+}
+
+.big-icon {
+  font-size: 70px;
+  animation: bounce 1.5s infinite alternate;
+}
+
+button {
+  border: none;
+  padding: 13px 22px;
+  margin: 7px;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(120deg, #ed8fba, #b68bdf);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 900;
+  box-shadow: 0 5px 14px #d69bc755;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+.instructions {
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 13px;
+  margin: 15px 0;
+  background: #fff0f7;
+  border-radius: 20px;
+}
+
+.preview {
+  margin: 15px;
+}
+
+.preview img {
+  width: 105px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px #bd8aaa55;
+}
+
+#puzzle {
+  width: min(88vw, 370px);
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4px;
+  padding: 6px;
+  margin: 18px auto;
+  background: #eab2d0;
+  border: 3px solid white;
+  border-radius: 17px;
+  box-shadow: 0 7px 20px #c58aaa55;
+}
+
+.piece {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+  border-radius: 6px;
+  cursor: grab;
+  touch-action: manipulation;
+  transition: transform .15s;
+}
+
+.piece.selected {
+  outline: 4px solid #d34e98;
+  transform: scale(.91);
+  z-index: 2;
+}
+
+.piece.correct {
+  border-color: #a9dfb1;
+}
+
+#feedback {
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.music-note {
+  font-size: 13px;
+  color: #bd6a9b;
+  margin-top: 15px;
+}
+
+.celebrate-icon {
+  font-size: 55px;
+  animation: bounce 1s infinite alternate;
+}
+
+#finalImage {
+  width: 100%;
+  max-width: 310px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 5px solid white;
+  border-radius: 22px;
+  box-shadow: 0 8px 20px #b98aa855;
+}
+
+.pink-title {
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.birthday-letter {
+  background: #fff0f7;
+  padding: 18px;
+  margin: 18px 0;
+  border-radius: 20px;
+  line-height: 1.8;
+}
+
+.birthday-letter h3 {
+  color: #d15b99;
+}
+
+.music-player {
+  background: #fce5f1;
+  border-radius: 20px;
+  padding: 12px;
+  margin: 15px 0;
+}
+
+footer {
+  padding: 22px 5px;
+  font-size: 13px;
+  color: #966d91;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  pointer-events: none;
+  z-index: 0;
+  animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-10px) scale(1.08);
+  }
+}
+
+@media(max-width:360px) {
+  h1 {
+    font-size: 29px;
+  }
+
+  .card {
+    padding: 17px 10px;
+  }
+
+  #puzzle {
+    width: 90vw;
+    gap: 3px;
+  }
+}
