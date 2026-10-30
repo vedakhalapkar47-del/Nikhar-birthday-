@@ -2,7 +2,7 @@
 const SIZE = 4;
 const TOTAL = SIZE * SIZE;
 
-const imagePath = "images/sister1.jpg";
+const imagePath = "sister1.jpg";
 
 const puzzle = document.getElementById("puzzle");
 const welcome = document.getElementById("welcome");
